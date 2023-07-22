@@ -1,4 +1,4 @@
-data <- read.csv("../data/tema1/missing-data.csv", na.strings = "")
+data <- read.csv("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/missing-data.csv", na.strings = "")
 
 data.cleaned <- na.omit(data)
 

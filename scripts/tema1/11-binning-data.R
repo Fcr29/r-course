@@ -1,4 +1,4 @@
-students <- read.csv("../data/tema1/data-conversion.csv")
+students <- read.csv("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/data-conversion.csv")
 
 bp <- c(-Inf, 10000, 31000, Inf)
 names <- c("Low", "Average", "High")
@@ -13,7 +13,7 @@ students$Income.cat3 <- cut(students$Income,
 
 
 #dummy variables
-students <- read.csv("../data/tema1/data-conversion.csv")
+students <- read.csv("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/data-conversion.csv")
 install.packages("dummies")
 library(dummies)
 

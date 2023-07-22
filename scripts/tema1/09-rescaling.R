@@ -1,6 +1,6 @@
 install.packages("scales")
 library(scales)
-students <- read.csv("../data/tema1/data-conversion.csv")
+students <- read.csv("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/data-conversion.csv")
 
 students$Income.rescaled <- rescale(students$Income)
 

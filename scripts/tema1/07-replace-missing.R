@@ -1,4 +1,4 @@
-data <- read.csv("../data/tema1/missing-data.csv", na.strings = "")
+data <- read.csv("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/missing-data.csv", na.strings = "")
 data$Income.mean <- ifelse(is.na(data$Income), 
                            mean(data$Income, na.rm = TRUE),
                            data$Income
@@ -32,7 +32,7 @@ random.impute.data.frame <- function(dataframe, cols){
 }
 
 
-data <- read.csv("../data/tema1/missing-data.csv", na.strings = "")
+data <- read.csv("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/missing-data.csv", na.strings = "")
 data$Income[data$Income==0]<-NA
 data <- random.impute.data.frame(data, c(1,2))
 

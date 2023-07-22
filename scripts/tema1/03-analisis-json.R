@@ -2,8 +2,8 @@ install.packages("jsonlite")
 library(jsonlite)
 
 
-dat.1 <- fromJSON("../data/tema1/students.json")
-dat.2 <- fromJSON("../data/tema1/student-courses.json")
+dat.1 <- fromJSON("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/.json")
+dat.2 <- fromJSON("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/student-courses.json")
 
 
 

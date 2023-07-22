@@ -5,27 +5,27 @@ pedidos <- data.frame(clientes, fechas, pago)
 
 clientes_vip <- c("Juan Gabriel", "Ricardo")
 
-save(pedidos, clientes_vip, file = "../data/tema1/pedidos.Rdata")
-saveRDS(pedidos, file="../data/tema1/pedidos.rds")
+save(pedidos, clientes_vip, file = "/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/pedidos.Rdata")
+saveRDS(pedidos, file="/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/pedidos.rds")
 
 remove(pedidos)
 
 
-load("../data/tema1/pedidos.Rdata")
+load("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/pedidos.Rdata")
 
-orders <- readRDS("../data/tema1/pedidos.rds")
+orders <- readRDS("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/pedidos.rds")
 
 data(iris)
 data(cars)
 
-save.image(file = "../data/tema1/alldata.Rdata")
+save.image(file = "/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/alldata.Rdata")
 
 
 primes <- c(2,3,5,7,11,13)
 pow2 <- c(2,4,8,16,32,64,128)
-save(list = c("primes", "pow2"), file = "../data/tema1/primes_and_pow2.Rdata")
+save(list = c("primes", "pow2"), file = "/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/primes_and_pow2.Rdata")
 
-attach("../data/tema1/primes_and_pow2.Rdata")
+attach("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/primes_and_pow2.Rdata")
 
 data()
 

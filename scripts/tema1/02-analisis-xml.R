@@ -1,7 +1,7 @@
 install.packages("XML")
 library(XML)
 
-url <- "../data/tema1/cd_catalog.xml"
+url <- "/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/cd_catalog.xml"
 
 xmldoc <- xmlParse(url) #XMLInternalDocument
 rootnode <- xmlRoot(xmldoc)
@@ -16,7 +16,7 @@ cds.catalog[1:5,]
 #getNodeSet()
 
 
-population_url <- "../data/tema1/WorldPopulation-wiki.htm"
+population_url <- "/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/WorldPopulation-wiki.htm"
 tables <- readHTMLTable(population_url)
 
 most_populated <- tables[[6]]

@@ -1,4 +1,4 @@
-housing <- read.csv("../data/tema1/BostonHousing.csv")
+housing <- read.csv("/home/tux/codigoAnacondaMLPythonR/r-course/data/tema1/BostonHousing.csv")
 
 housing.z <- scale(housing, center = TRUE, scale = TRUE)
 housing.mean <- scale(housing, center = TRUE, scale = FALSE)
